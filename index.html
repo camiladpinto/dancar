@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+  <title>Movimento Artístico</title>
+  <meta name="description" content="dança para todos">
+  <meta name="keywords" content="dança e música">
+  <meta name="author" content="Camila Pinto">
+  <meta http-equiv="refresh" content="30">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css\mystyle.css">
+</head>
+
+  <!---Content starts here -->
+<body>
+  <header>
+
+    <a id="menu_icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="white"/>
+      </svg>
+    </a>
+
+    <div id="drawer" >
+      <nav>
+        <a href="#porque"> Porque dançar? </a>
+        <a href="#dançarinos"> Dançarinos </a>
+        <a href="#expressão"> O Movimento expressivo</a>
+        <a href="#video"> Vídeo </a>
+        <a href="#estilo"> Estilos </a>
+      </nav>
+    </div>
+
+
+    <h1>Dança </h1>
+    <p>A dança é uma das formas mais belas e profundas da expressão corporal. </p>
+    <hr>
+    <h4> Design de Interação </h4>
+  </header>
+
+<!---Nav/references -->
+
+<nav  id="tabletPC" class="col-3">
+  <a href="#porque"> Porque dançar? </a>
+  <br />
+  <a href="#dançarinos"> Dançarinos </a>
+  <br />
+  <a href="#expressão"> O Movimento expressivo</a>
+  <br />
+  <a href="#video"> Vídeo </a>
+  <br />
+  <a href="#estilo"> Estilos </a>
+</nav>
+
+<div id="container" class="col-9">
+
+<section class="slideshow-container">
+
+  <h2>O Movimento expressivo</h2>
+
+  <article class="mySlides" class="fade">
+  <figure>
+  <img src="imagem/dance1.jpg">
+  <figcaption> Figure 1: Salto! </figcaption>
+  </figure>
+  </article>
+
+  <article class="mySlides" class="fade">
+  <figure>
+  <img src="imagem/dance2.jpg">
+  <figcaption>Figure 2: Preto e branco! </figcaption>
+  </figure>
+  </article>
+
+  <article class="mySlides" class="fade">
+  <figure>
+  <img src="imagem/dance3.jpg">
+  <figcaption> Figure 3: Dançarina! </figcaption>
+  </figure>
+  </article>
+
+  <div class="dotpoints">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  </div>
+
+</section>
+
+<!---Unordered list -->
+<section>
+  <a name="porque">
+    <h2> Porque dançar ?</h2>
+    <p>A dança é uma das formas mais belas e profundas da expressão corporal: </i>
+       <ul>
+          <li> Ela ultrapassa o certo e o errado </li>
+          <li> Transgride padrões e estilos </li>
+          <li> Permite composições singulares </li>
+       </ul>
+</section>
+
+<!---Ordered list -->
+<section>
+  <a name="dançarinos">
+    <h2> Dançarinos </h2>
+    <p> Dois dançarinos profissionais que me inspiram muito: </p>
+    <ol>
+        <li><u> Léa Salomon </u></li>
+        <li><u> Gaël Rougegrez </u></li>
+    </ol>
+</section>
+
+<!---Images and video -->
+
+<section>
+  <a name="expressão">
+    <h2>O Movimento expressivo</h2>
+    <p> Através da dança é possível expressar qualquer sentimento. </p>
+    <img src="imagem/dance4.jpg" width="1500" height="auto">
+    <img src="imagem/dance5.jpg" width="1500" height="auto">
+    <img src="imagem/dance6.jpg" width="1500" height="auto">
+</section>
+
+<section>
+  <a name="video">
+  <h2>Vídeo</h2>
+  <p> Selecionei este vídeo demonstrativo de dois dançarinos profissionais. </p>
+  <iframe width="560" height="315"
+src="https://www.youtube.com/embed/mGv0ze0lHKA"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+  </iframe>
+</section>
+
+<!---Table -->
+<section>
+  <a name="table">
+    <br />
+    <h2>Estilos</h2>
+    <p>Tipos de dança mais conhecidos da atualidade</p>
+    <table border="1px">
+      <th colspan="4">Exemplos de estilos de dança</th>
+
+      <tr>
+        <td>Salsa</td>
+        <td>Jazz</td>
+        <td>Ballet</td>
+        <td>Contemporâneo</td>
+      </tr>
+      <tr>
+        <td>Kizomba</td>
+        <td>Street</td>
+        <td>Hip-Hop</td>
+        <td>Flamenco</td>
+      </tr>
+
+    </table>
+    <br />
+    <br />
+</section>
+
+</div>
+
+<!---Side notes -->
+<aside class="col-2">
+     <h3> Este foi o tema que selecionei. </h3>
+     <p> A dança é para todos, qualquer um consegue criar movimentos com o seu corpo, portanto qualquer um pode dançar! </p>
+</aside>
+
+<!---Footer -->
+<footer>
+  <h2>Desenvolvido por Camila Pinto</h2>
+</footer>
+
+<!---JavaScript -->
+<script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+let i = null;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex> slides.length) {slideIndex = 1}
+
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+let menu_icon = document.querySelector("#menu_icon");
+let container = document.querySelector("#container");
+let drawer = document.querySelector("#drawer");
+menu_icon.addEventListener("click", function (e) {
+drawer.classList.toggle("open");
+e.stopPropagation();
+});
+container.addEventListener("click", function () {
+drawer.classList.remove("open");
+});
+
+</script>
+
+</body>
+<!---Content ends here -->
+</html>
